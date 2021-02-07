@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fonts/gotham_pro.css">
+    <title>studservis</title>
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__container container">
+                <div class="header__grid d-flex">
+                    <div class="header__col header__left d-flex">
+                        <div class="header__button button header__hamburger hamburger d-flex ">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                            <div class="hamburger__text">Выберите тип работы</div>
+                            <ul class="hamburger__list">
+                                <li class="hamburger__li">
+                                    <a href="#" class="hamburger__link">Дипломная работа</a>
+                                </li>
+                                <li class="hamburger__li">
+                                    <a href="#" class="hamburger__link">Эссе</a>
+                                </li>
+                                <li class="hamburger__li">
+                                    <a href="#" class="hamburger__link">Дипломная работа</a>
+                                </li>
+                                <li class="hamburger__li">
+                                    <a href="#" class="hamburger__link">Эссе</a>
+                                </li>
+                            </ul>
+<!--                            <select class="form__element form__select" onchange="location = this.value;">-->
+<!--                                <option value="Выберите тип работы" selected>Выберите тип работы</option>-->
+<!--                                <option value="card.html">Дипломная работа</option>-->
+<!--                                <option value="Эссэ">Эссэ</option>-->
+<!--                                <option value="Дипломная работа">Дипломная работа</option>-->
+<!--                            </select>-->
+                        </div>
+                        <ul class="header__social social d-flex">
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <img src="../img/vk.png" alt="" class="social__image">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <img src="../img/insta.png" alt="" class="social__image">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <img src="../img/facebook.png" alt="" class="social__image">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <img src="../img/ok.png" alt="" class="social__image">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__col header__center">
+                        <a href="#" class="header__link">
+                            <img src="../img/studservis_logo.svg" alt="" class="header__logo">
+                        </a>
+                    </div>
+                    <div class="header__col header__right d-flex">
+                        <button type="submit" class="header__button header__button_order button button_color-pink">
+                            Заказать работу
+                        </button>
+                        <a href="#popup-gift" class="header__button header__button_info button show-popup">
+                            <p class="button__inner"><span class="button__text">300 рублей</span> на первый заказ</p>
+                            <span class="button__icon button__icon_mobile icon icon-gift "></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<main class="main">
+
+    <section class="promo promo-catalog" style="background-image: url('../img/back-catalog.jpg');">
+        <div class="promo__container container">
+            <h1 class="promo__title title title_h1">
+                вам нужна
+                <a href="#" class="title__text">дипломная работа</a>
+                ?
+            </h1>
+            <div class="promo__search search">
+                <form action="#" class=" search__form d-flex">
+                    <input type="text" placeholder="Тема работы" class="search__input search__input_main">
+                    <input type="text" placeholder="Электронная почта" class="search__input search__input_second">
+                    <button type="button" class="search__button">Узнать стоимость</button>
+                </form>
+                <div class="search__bottom d-flex">
+                    <p class="search__popular">Интересует <span>Cестринкое дело</span>?</p>
+                    <div class="search__term term">
+                        <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1" checked="checked">
+                        <label for="styled-checkbox-1">Нажимая кнопку "Узнать стоимость", вы соглашаетесь <a href="#" target="_blank">с политикой конфиденциальности</a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <ul class="promo__features features-promo list d-flex">
+                <li class="features-promo__item">
+                    <img src="img/features__icon_5.png" alt="" class="features-promo__icon">
+                    <p class="features-promo__text">
+                        Оставьте заявку на Дипломную работу
+                    </p>
+                </li>
+                <li class="features-promo__item">
+                    <img src="img/features__icon_2.png" alt="" class="features-promo__icon">
+                    <p class="features-promo__text">
+                        Получите бесплатную консультацию по написанию
+                    </p>
+                </li>
+                <li class="features-promo__item">
+                    <img src="img/features__icon_4.png" alt="" class="features-promo__icon">
+                    <p class="features-promo__text">
+                        Сделайте заказ и скачайте результат на сайте
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="catalog catalog-card">
+        <div class="catalog__container">
+            <div class="catalog__grid d-flex">
+                <aside class="catalog__sidebar sidebar col-4">
+                    <div class="sidebar__similar sidebar__item similar">
+                        <div class="similar__top">
+                            <h2 class="similar__title title title_h2">Похожие работы:</h2>
+                        </div>
+                        <ul class="goods__list similar__list similar-list-js list">
+                            <li class="goods__item">
+                                <div class="goods__header row d-flex">
+                                    <div class="goods__col goods__left col d-flex">
+                                        <p class="goods__type goods__text">Дипломная работа</p>
+                                        <p class="goods__theme goods__text">Английский начальный</p>
+                                    </div>
+                                </div>
+                                <p class="goods__name">Инверсия в современном англ.языке</p>
+                                <div class="goods__bottom row d-flex">
+                                    <div class="goods__buttons col d-flex">
+                                        <a href="#" class="goods__button goods__more button">Подробнее</a>
+                                        <a href="#" class="goods__button goods__link button">Скачать в 1 клик</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="goods__item">
+                                <div class="goods__header row d-flex">
+                                    <div class="goods__col goods__left col d-flex">
+                                        <p class="goods__type goods__text">Дипломная работа</p>
+                                        <p class="goods__theme goods__text">Английский начальный</p>
+                                    </div>
+                                </div>
+                                <p class="goods__name">Инверсия в современном англ.языке</p>
+                                <div class="goods__bottom row d-flex">
+                                    <div class="goods__buttons col d-flex">
+                                        <a href="#" class="goods__button goods__more button">Подробнее</a>
+                                        <a href="#" class="goods__button goods__link button">Скачать в 1 клик</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="goods__item">
+                                <div class="goods__header row d-flex">
+                                    <div class="goods__col goods__left col d-flex">
+                                        <p class="goods__type goods__text">Дипломная работа</p>
+                                        <p class="goods__theme goods__text">Английский начальный</p>
+                                    </div>
+                                </div>
+                                <p class="goods__name">Инверсия в современном англ.языке</p>
+                                <div class="goods__bottom row d-flex">
+                                    <div class="goods__buttons col d-flex">
+                                        <a href="#" class="goods__button goods__more button">Подробнее</a>
+                                        <a href="#" class="goods__button goods__link button">Скачать в 1 клик</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="goods__item">
+                                <div class="goods__header row d-flex">
+                                    <div class="goods__col goods__left col d-flex">
+                                        <p class="goods__type goods__text">Дипломная работа</p>
+                                        <p class="goods__theme goods__text">Английский начальный</p>
+                                    </div>
+                                </div>
+                                <p class="goods__name">Инверсия в современном англ.языке</p>
+                                <div class="goods__bottom row d-flex">
+                                    <div class="goods__buttons col d-flex">
+                                        <a href="#" class="goods__button goods__more button">Подробнее</a>
+                                        <a href="#" class="goods__button goods__link button">Скачать в 1 клик</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="goods__item">
+                                <div class="goods__header row d-flex">
+                                    <div class="goods__col goods__left col d-flex">
+                                        <p class="goods__type goods__text">Дипломная работа</p>
+                                        <p class="goods__theme goods__text">Английский начальный</p>
+                                    </div>
+                                </div>
+                                <p class="goods__name">Инверсия в современном англ.языке</p>
+                                <div class="goods__bottom row d-flex">
+                                    <div class="goods__buttons col d-flex">
+                                        <a href="#" class="goods__button goods__more button">Подробнее</a>
+                                        <a href="#" class="goods__button goods__link button">Скачать в 1 клик</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar__banner sidebar__item banner-first banner-down d-flex">
+                        <img src="img/banner-first_back.jpg" alt="" class="banner-first__image">
+                        <p class="banner-first__text">Уже пробовали Стусервис?</p>
+                        <h3 class="banner-first__title sidebar__title title title_h3">Получите <br> <span>300<b>₽</b></span>  на первый заказ</h3>
+                        <a href="#" class="banner-first__button button button_color-blue">Узнать стоимость</a>
+                    </div>
+                </aside>
+                <div class="catalog__goods goods card col-8">
+                    <div class="goods__top">
+                        <h1 class="goods__title title title_h1">Значение управления водными ресурсами Испании как субъекта ЕС в контексте мировой политики</h1>
+                        <ul class="goods__breadcrumbs breadcrumbs d-flex list">
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Студсервис</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Примеры</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Дипломные работы</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Фиология</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                Английский
+                            </li>
+                        </ul>
+                        <div class="card__top d-flex">
+                            <p class="card__type">Эссэ</p>
+                            <a href="#" class="card__link">Хотите заказать эссе по политолоии?</a>
+                        </div>
+                        <div class="card__body row wrap d-flex">
+                            <p class="card__pages col card__text d-flex">
+                                <span class="goods__icon icon icon-pages"></span>
+                                <span>60 страниц</span>
+                            </p>
+                            <p class="card__origin col card__text d-flex">
+                                <span class="goods__icon icon icon-origin"></span>
+                                <span>5 источников</span>
+                            </p>
+                            <p class="card__date col card__text d-flex">
+                                <span class="goods__icon icon icon-date"></span>
+                                <span>Добавлена 11.01.2020</span>
+                            </p>
+                        </div>
+                        <div class="card__info d-flex">
+                            <p class="card__price card__price_main price__main">396 <b>₽</b></p>
+                            <p class="card__price card__price_old price__old">440 <b>₽</b></p>
+                        </div>
+                        <div class="card__buttons d-flex">
+                            <a href="#" class="goods__button goods__more button">Cкачать превью</a>
+                            <a href="#popup-download" class="goods__button goods__link button show-popup">Скачать в 1 клик</a>
+                        </div>
+                        <div class="card__main carousel">
+                            <div class="carousel__tabs tabs d-flex">
+                                <button type="button" class="tabs__button tabs__button_left d-flex">
+                                    <span class="icon icon-arrow-left"></span>
+                                </button>
+                                <ul class="tabs__list d-flex">
+                                    <li class="tabs__item" data-tab-category="0">
+                                        <button type="button" class="tabs__link">Содержание</button>
+                                    </li>
+                                    <li class="tabs__item tabs__item_active" data-tab-category="1">
+                                        <button type="button"  class="tabs__link ">Часть работы</button>
+                                    </li>
+                                    <li class="tabs__item" data-tab-category="2">
+                                        <button type="button" class="tabs__link">Список литературы</button>
+                                    </li>
+                                </ul>
+                                <button type="button" class="tabs__button tabs__button_right d-flex">
+                                    <span class="icon icon-arrow-right"></span>
+                                </button>
+                            </div>
+                            <div class="carousel__slider">
+                                <div class="card__slide" data-tab-content="0">
+                                    <h2 class="carousel__title title title_center title_h2">Фрагмент для ознакомления 1</h2>
+                                    <div class="carousel__content">
+                                        <p>
+                                            Эти два факта являются демонстрацией статуса Испании как пионера по принятию концепции определения дренажных бассейнов как неделимых органов, осуществляющих управление водными ресурсами, так и создание гидрографических конфедераций / дренажных бассейновых организаций, осуществляющих управление данными ресурсами.
+                                            Вместе с тем, назрела необходимость пересмотра экономической водной политики для достижения высоких уровней развития водных ресурсов в будущем, прежде всего для экономии воды согласно концессий существовавших ранее, для ее использования в орошении. В связи с этим Национальный водный совет Испании выступил с предложением относительно организации обсуждения финансово-экономических аспектов водных ресурсов, с целью изменения экономических правил, используемых к настоящему времени, чтобы увеличить эффективность использования водных ресурсов через соответствующие выплаты. Европейский Союз также избрал движение в данном направлении, предлагая его в качестве Директивы в Водной политике.
+                                            В целом, интегрированное управление водными ресурсами международных водотоков кажется, бесспорно, перспективным путем скоординированного развития водных ресурсов, что будет способствовать достижению максимального социально-экономического благополучия на справедливой основе без причинения вреда устойчивости жизненно важных экосистем.
+                                        </p>
+                                        <p>
+                                            Литература
+                                            <br>
+                                            Diгective 2000/60/EC of the Euгopean Paгliament and of the Council of 23 Octobeг 2000 establishing a framewoгk for Community action in the field of wateг policy // Official Jouгnal. - 22.12.2000. - № 237.- Pp. 1-73
+                                            The United Nations World Wateг Development Report: Managing Wateг Undeг Unceгtainty and Risk // UNESCO. - 2012. - 380 р.
+                                            Vermaat J. Managing European Coasts: Past, Present and Future / J. Vermaat // Springer, 2005. - 387 p.
+                                            Оценка состояния трансrраничных вод в реrионе ЕЭК ООН: оценка трансrраничных рек, озер и подземных вод в Восточной и Северной Европе. Выводы второй Оценки трансrраничных рек, озер и подземных вод в реrионе Европейской Экономической Комиссии // Европейская экономическая комиссия, Совещание Сторон Конвенции по охране и использованию трансrраничных водотоков и международных озер. - 2011. - 36 с.
+                                            Управление трансrраничными водными ресурсами в Восточной Европе, на Кавказе и в Центральной Азии. Роль НКО в продвижении интегрированного управления водными ресурсами // Центр трансrраничного сотрудничества Чудского озера. - 2011. - 40 с
+                                            Оценка состояния трансграничных вод в регионе ЕЭК ООН: оценка трансграничных рек, озер и подземных вод в Восточной и Северной Европе. Выводы второй Оценки трансграничных рек, озер и подземных вод в регионе Европейской Экономической Комиссии // Европейская экономическая комиссия, Совещание Сторон Конвенции по охране и использованию трансграничных водотоков и международных озер. - 2011. – С.12.
+                                            The United Nations World Water Development Report: Managing Water Under Uncertainty and Risk // UNESCO. - 2012. – р.208
+                                            Directive 2000/60/EC of the European Parliament and of the Council of 23 October 2000 establishing a framework for Community action in the field of water policy // Official Journal. - 22.12.2000. - № 237.- Pp. 1-73
+                                            Управление трансграничными водными ресурсами в Восточной Европе, на Кавказе и в Центральной Азии. Роль НКО в продвижении интегрированного управления водными ресурсами // Центр трансграничного сотрудничества Чудского озера. - 2011. – C.3
+                                            Vermaat J. Managing European Coasts: Past, Present and Future / J. Vermaat // Springer, 2005. – р.154-155
+                                            Directive 2000/60/EC of the European Parliament and of the Council of 23 October 2000 establishing a framework for Community action in the field of water policy // Official Journal. - 22.12.2000. - № 237.- Pp. 1-73
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__slide is-open" data-tab-content="1">
+                                    <h2 class="carousel__title title title_center title_h2">Фрагмент для ознакомления 2</h2>
+                                    <div class="carousel__content">
+                                        <p>
+                                            Эти два факта являются демонстрацией статуса Испании как пионера по принятию концепции определения дренажных бассейнов как неделимых органов, осуществляющих управление водными ресурсами, так и создание гидрографических конфедераций / дренажных бассейновых организаций, осуществляющих управление данными ресурсами.
+                                            Вместе с тем, назрела необходимость пересмотра экономической водной политики для достижения высоких уровней развития водных ресурсов в будущем, прежде всего для экономии воды согласно концессий существовавших ранее, для ее использования в орошении. В связи с этим Национальный водный совет Испании выступил с предложением относительно организации обсуждения финансово-экономических аспектов водных ресурсов, с целью изменения экономических правил, используемых к настоящему времени, чтобы увеличить эффективность использования водных ресурсов через соответствующие выплаты. Европейский Союз также избрал движение в данном направлении, предлагая его в качестве Директивы в Водной политике.
+                                            В целом, интегрированное управление водными ресурсами международных водотоков кажется, бесспорно, перспективным путем скоординированного развития водных ресурсов, что будет способствовать достижению максимального социально-экономического благополучия на справедливой основе без причинения вреда устойчивости жизненно важных экосистем.
+                                        </p>
+                                        <p>
+                                            Литература
+                                            <br>
+                                            Diгective 2000/60/EC of the Euгopean Paгliament and of the Council of 23 Octobeг 2000 establishing a framewoгk for Community action in the field of wateг policy // Official Jouгnal. - 22.12.2000. - № 237.- Pp. 1-73
+                                            The United Nations World Wateг Development Report: Managing Wateг Undeг Unceгtainty and Risk // UNESCO. - 2012. - 380 р.
+                                            Vermaat J. Managing European Coasts: Past, Present and Future / J. Vermaat // Springer, 2005. - 387 p.
+                                            Оценка состояния трансrраничных вод в реrионе ЕЭК ООН: оценка трансrраничных рек, озер и подземных вод в Восточной и Северной Европе. Выводы второй Оценки трансrраничных рек, озер и подземных вод в реrионе Европейской Экономической Комиссии // Европейская экономическая комиссия, Совещание Сторон Конвенции по охране и использованию трансrраничных водотоков и международных озер. - 2011. - 36 с.
+                                            Управление трансrраничными водными ресурсами в Восточной Европе, на Кавказе и в Центральной Азии. Роль НКО в продвижении интегрированного управления водными ресурсами // Центр трансrраничного сотрудничества Чудского озера. - 2011. - 40 с
+                                            Оценка состояния трансграничных вод в регионе ЕЭК ООН: оценка трансграничных рек, озер и подземных вод в Восточной и Северной Европе. Выводы второй Оценки трансграничных рек, озер и подземных вод в регионе Европейской Экономической Комиссии // Европейская экономическая комиссия, Совещание Сторон Конвенции по охране и использованию трансграничных водотоков и международных озер. - 2011. – С.12.
+                                            The United Nations World Water Development Report: Managing Water Under Uncertainty and Risk // UNESCO. - 2012. – р.208
+                                            Directive 2000/60/EC of the European Parliament and of the Council of 23 October 2000 establishing a framework for Community action in the field of water policy // Official Journal. - 22.12.2000. - № 237.- Pp. 1-73
+                                            Управление трансграничными водными ресурсами в Восточной Европе, на Кавказе и в Центральной Азии. Роль НКО в продвижении интегрированного управления водными ресурсами // Центр трансграничного сотрудничества Чудского озера. - 2011. – C.3
+                                            Vermaat J. Managing European Coasts: Past, Present and Future / J. Vermaat // Springer, 2005. – р.154-155
+                                            Directive 2000/60/EC of the European Parliament and of the Council of 23 October 2000 establishing a framework for Community action in the field of water policy // Official Journal. - 22.12.2000. - № 237.- Pp. 1-73
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__slide" data-tab-content="2">
+                                    <h2 class="carousel__title title title_center title_h2">Фрагмент для ознакомления 3</h2>
+                                    <div class="carousel__content">
+                                        <p>
+                                            Эти два факта являются демонстрацией статуса Испании как пионера по принятию концепции определения дренажных бассейнов как неделимых органов, осуществляющих управление водными ресурсами, так и создание гидрографических конфедераций / дренажных бассейновых организаций, осуществляющих управление данными ресурсами.
+                                            Вместе с тем, назрела необходимость пересмотра экономической водной политики для достижения высоких уровней развития водных ресурсов в будущем, прежде всего для экономии воды согласно концессий существовавших ранее, для ее использования в орошении. В связи с этим Национальный водный совет Испании выступил с предложением относительно организации обсуждения финансово-экономических аспектов водных ресурсов, с целью изменения экономических правил, используемых к настоящему времени, чтобы увеличить эффективность использования водных ресурсов через соответствующие выплаты. Европейский Союз также избрал движение в данном направлении, предлагая его в качестве Директивы в Водной политике.
+                                            В целом, интегрированное управление водными ресурсами международных водотоков кажется, бесспорно, перспективным путем скоординированного развития водных ресурсов, что будет способствовать достижению максимального социально-экономического благополучия на справедливой основе без причинения вреда устойчивости жизненно важных экосистем.
+                                        </p>
+                                        <p>
+                                            Литература
+                                            <br>
+                                            Diгective 2000/60/EC of the Euгopean Paгliament and of the Council of 23 Octobeг 2000 establishing a framewoгk for Community action in the field of wateг policy // Official Jouгnal. - 22.12.2000. - № 237.- Pp. 1-73
+                                            The United Nations World Wateг Development Report: Managing Wateг Undeг Unceгtainty and Risk // UNESCO. - 2012. - 380 р.
+                                            Vermaat J. Managing European Coasts: Past, Present and Future / J. Vermaat // Springer, 2005. - 387 p.
+                                            Оценка состояния трансrраничных вод в реrионе ЕЭК ООН: оценка трансrраничных рек, озер и подземных вод в Восточной и Северной Европе. Выводы второй Оценки трансrраничных рек, озер и подземных вод в реrионе Европейской Экономической Комиссии // Европейская экономическая комиссия, Совещание Сторон Конвенции по охране и использованию трансrраничных водотоков и международных озер. - 2011. - 36 с.
+                                            Управление трансrраничными водными ресурсами в Восточной Европе, на Кавказе и в Центральной Азии. Роль НКО в продвижении интегрированного управления водными ресурсами // Центр трансrраничного сотрудничества Чудского озера. - 2011. - 40 с
+                                            Оценка состояния трансграничных вод в регионе ЕЭК ООН: оценка трансграничных рек, озер и подземных вод в Восточной и Северной Европе. Выводы второй Оценки трансграничных рек, озер и подземных вод в регионе Европейской Экономической Комиссии // Европейская экономическая комиссия, Совещание Сторон Конвенции по охране и использованию трансграничных водотоков и международных озер. - 2011. – С.12.
+                                            The United Nations World Water Development Report: Managing Water Under Uncertainty and Risk // UNESCO. - 2012. – р.208
+                                            Directive 2000/60/EC of the European Parliament and of the Council of 23 October 2000 establishing a framework for Community action in the field of water policy // Official Journal. - 22.12.2000. - № 237.- Pp. 1-73
+                                            Управление трансграничными водными ресурсами в Восточной Европе, на Кавказе и в Центральной Азии. Роль НКО в продвижении интегрированного управления водными ресурсами // Центр трансграничного сотрудничества Чудского озера. - 2011. – C.3
+                                            Vermaat J. Managing European Coasts: Past, Present and Future / J. Vermaat // Springer, 2005. – р.154-155
+                                            Directive 2000/60/EC of the European Parliament and of the Council of 23 October 2000 establishing a framework for Community action in the field of water policy // Official Journal. - 22.12.2000. - № 237.- Pp. 1-73
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="#" class="carousel__more center-text">Показать больше</a>
+                            </div>
+                        </div>
+                        <ul class="carousel__dots dots">
+                            <button class="dots__item owl-dot" data-tab-nav="0">
+                                <span></span>
+                            </button>
+                            <button class="dots__item owl-dot active" data-tab-nav="1">
+                                <span></span>
+                            </button>
+                            <button class="dots__item owl-dot" data-tab-nav="2">
+                                <span></span>
+                            </button>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular">
+        <div class="popular__container">
+            <h2 class="popular__title title title_h2 title_center">Узнать стоимость работы</h2>
+            <ul class="popular__list d-flex wrap">
+                <li class="popular__item">
+                    <div class="popular__header d-flex">
+                        <img src="img/popular__icon_1.png" alt="" class="popular__image">
+                        <div class="popular__inner">
+                            <p class="popular__name">Дипломная работа</p>
+                            <p class="popular__description">от 6000 рублей/ 3-21 дня</p>
+                        </div>
+                    </div>
+                    <a href="#" class="popular__button button button_color-blue">Скачать в 1 клик</a>
+                </li>
+                <li class="popular__item">
+                    <div class="popular__header d-flex">
+                        <img src="img/popular__icon_2.png" alt="" class="popular__image">
+                        <div class="popular__inner">
+                            <p class="popular__name">Дипломная работа</p>
+                            <p class="popular__description">от 6000 рублей/ 3-21 дня</p>
+                        </div>
+                    </div>
+                    <a href="#" class="popular__button button button_color-blue">Скачать в 1 клик</a>
+                </li>
+                <li class="popular__item">
+                    <div class="popular__header d-flex">
+                        <img src="img/popular__icon_3.png" alt="" class="popular__image">
+                        <div class="popular__inner">
+                            <p class="popular__name">Дипломная работа</p>
+                            <p class="popular__description">от 6000 рублей/ 3-21 дня</p>
+                        </div>
+                    </div>
+                    <a href="#" class="popular__button button button_color-blue">Скачать в 1 клик</a>
+                </li>
+                <li class="popular__item">
+                    <div class="popular__header d-flex">
+                        <img src="img/popular__icon_4.png" alt="" class="popular__image">
+                        <div class="popular__inner">
+                            <p class="popular__name">Дипломная работа</p>
+                            <p class="popular__description">от 6000 рублей/ 3-21 дня</p>
+                        </div>
+                    </div>
+                    <a href="#" class="popular__button button button_color-blue">Скачать в 1 клик</a>
+                </li>
+                <li class="popular__item">
+                    <div class="popular__header d-flex">
+                        <img src="img/popular__icon_5.png" alt="" class="popular__image">
+                        <div class="popular__inner">
+                            <p class="popular__name">Дипломная работа</p>
+                            <p class="popular__description">от 6000 рублей/ 3-21 дня</p>
+                        </div>
+                    </div>
+                    <a href="#" class="popular__button button button_color-blue">Скачать в 1 клик</a>
+                </li>
+                <li class="popular__item">
+                    <div class="popular__header d-flex">
+                        <img src="img/popular__icon_6.png" alt="" class="popular__image">
+                        <div class="popular__inner">
+                            <p class="popular__name">Дипломная работа</p>
+                            <p class="popular__description">от 6000 рублей/ 3-21 дня</p>
+                        </div>
+                    </div>
+                    <a href="#" class="popular__button button button_color-blue">Скачать в 1 клик</a>
+                </li>
+                <li class="popular__item">
+                    <div class="popular__header d-flex">
+                        <img src="img/popular__icon_7.png" alt="" class="popular__image">
+                        <div class="popular__inner">
+                            <p class="popular__name">Дипломная работа</p>
+                            <p class="popular__description">от 6000 рублей/ 3-21 дня</p>
+                        </div>
+                    </div>
+                    <a href="#" class="popular__button button button_color-blue">Скачать в 1 клик</a>
+                </li>
+                <li class="popular__item">
+                    <div class="popular__header d-flex">
+                        <img src="img/popular__icon_8.png" alt="" class="popular__image">
+                        <div class="popular__inner">
+                            <p class="popular__name">Дипломная работа</p>
+                            <p class="popular__description">от 6000 рублей/ 3-21 дня</p>
+                        </div>
+                    </div>
+                    <a href="#" class="popular__button button button_color-blue">Скачать в 1 клик</a>
+                </li>
+            </ul>
+            <a href="#" class="popular__more popular__button">Заказать другую работу</a>
+        </div>
+    </section>
+
+
+
+</main>
+
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__row row d-flex">
+            <div class="footer__col col col-6">
+                <div class="footer__row footer__grid row d-flex">
+                    <div class="footer__col col">
+                        <nav class="footer__nav">
+                            <ul class="footer__menu menu">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Дипломные</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Курсовые</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Ответы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Рефераты</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Эссе</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="tel:" class="footer__number number">8(800)511-34-29</a>
+                    </div>
+                    <div class="footer__col col">
+                        <div class="footer__group footer__address">
+                            <h3 class="footer__title">Наш адрес:</h3>
+                            <p class="footer__text">Офис в Санкт-Петербурге</p>
+                            <p class="footer__text">ул. Введенский канал, д. 7, оф. 424</p>
+                            <p class="footer__text">БЦ "Фарватер"</p>
+                            <p class="footer__text">(ст. м. Пушкинская)</p>
+                        </div>
+                        <div class="footer__group footer__time">
+                            <h3 class="footer__title">График работы:</h3>
+                            <p class="footer__text">Пн-Пт: 09:00-20:00</p>
+                            <p class="footer__text">Cб: 12:00-16:00</p>
+                            <p class="footer__text">Вс: Выходной</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col col col-6">
+                <div class="footer__row footer__grid row d-flex">
+                    <div class="footer__col footer__links col">
+                        <div class="footer__group">
+                            <a href="#" class="footer__link">Политика<br> конфиденциальности</a>
+                        </div>
+                        <div class="footer__group">
+                            <a href="#" class="footer__link">Договоро оферты</a>
+                        </div>
+                        <div class="footer__group">
+                            <a href="#" class="footer__link">Безопастность платежей</a>
+                        </div>
+                    </div>
+                    <div class="footer__col col">
+                        <p class="footer__text footer__text_margin">ОГРНИП 317784700138471 ИП Еремин Михаил Александрович</p>
+                        <p class="footer__text footer__text_margin">ИНН 782065545302</p>
+                        <p class="footer__text footer__text_margin">© Студсервис. Все права защищены.</p>
+                    </div>
+                </div>
+                <form action="#" class="footer__form form">
+                    <div class="form__grid d-flex">
+                        <div class="form__group col">
+                            <p class="form__text"><span>Скидка 50%</span> за подписку</p>
+                        </div>
+                        <div class="form__group form__group_small">
+                            <input type="text" placeholder="Электронная почта" class="form__element form__input">
+                        </div>
+                        <div class="form__group">
+                            <button type="button" class="form__button button button_color-pink">Получить скидку</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <ul class="footer__social social d-flex">
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="../img/vk.png" alt="" class="social__image">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="../img/insta.png" alt="" class="social__image">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="../img/facebook.png" alt="" class="social__image">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="../img/ok.png" alt="" class="social__image">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</div>
+
+<!--popup-->
+<div class="popup_shade"></div>
+<div class="popup popup-order popup_max" id="popup-download">
+    <button type="button" class="popup__close-btn"></button>
+    <div class="popup__header">
+        <h3 class="popup__title title title_h3">Скачать работу: <span>“Инверсия в современном англ.языке”</span></h3>
+        <div class="popup__text">Мы вышлем работу вам на e-mail</div>
+    </div>
+    <div class="popup__content">
+        <form class="form ajax" method="POST" action="" name="download">
+            <div class="popup__grid form__grid row row_large d-flex">
+                <div class="form__group form__group_middle col">
+                    <input type="text" class="form__element popup__input form__input" name="email" placeholder="Электронаая почта"  tabindex="-1">
+                </div>
+                <div class="form__group form__group_large col">
+                    <button type="submit" class="form__button button button_color-pink"  tabindex="-1">
+                        <span class="button_text">Cкачать</span>
+                    </button>
+                </div>
+            </div>
+            <div class="popup__term term">
+                <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value1" checked="checked">
+                <label for="styled-checkbox-4">Нажимая кнопку "Cкачать", вы соглашаетесь <a href="#" target="_blank">с политикой конфиденциальности</a>
+                </label>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="popup popup-gift" id="popup-gift">
+    <button type="button" class="popup__close-btn"></button>
+    <div class="popup__header">
+        <h4 class="popup__title title title_center title_h4">Сегодня мы дарим <br><span class="title__text">300 рублей</span> на первый заказ</h4>
+        <img src="../img/popup__image.png" alt="" class="popup__image">
+    </div>
+    <div class="popup__content">
+        <form class="form ajax" method="POST" action="" name="download">
+            <div class="popup__grid form__grid row row_large wrap d-flex">
+
+                <div class="form__group form__group_select select-box form__group_large col">
+                    <select class="form__element form__select">
+                        <option value="Выберите тип работы" selected>Выберите тип работы</option>
+                        <option value="Дипломная работа">Дипломная работа</option>
+                        <option value="Эссэ">Эссэ</option>
+                        <option value="Дипломная работа">Дипломная работа</option>
+                    </select>
+                </div>
+<!--                <div class="form__group form__group_select form__group_large col">-->
+<!--                    <select class="select-js">-->
+<!--                        <option value="Выберите тип работы" selected>Выберите тип работы</option>-->
+<!--                        <option value="Дипломная работа">Дипломная работа</option>-->
+<!--                        <option value="Эссэ">Эссэ</option>-->
+<!--                        <option value="Дипломная работа">Дипломная работа</option>-->
+<!--                    </select>-->
+<!--                </div>-->
+                <div class="form__group form__group_large col">
+                    <input type="text" class="form__element popup__input form__input" name="theme" placeholder="Тема"  tabindex="-1">
+                </div>
+                <div class="form__group form__group_large col">
+                    <input type="text" class="form__element popup__input form__input" name="email" placeholder="Электронаая почта"  tabindex="-1">
+                </div>
+                <div class="form__group form__group_large col">
+                    <button type="submit" class="form__button button button_color-pink"  tabindex="-1">
+                        <span class="button_text">Узнать стоимость</span>
+                    </button>
+                </div>
+            </div>
+            <div class="popup__term term">
+                <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value1" checked="checked">
+                <label for="styled-checkbox-3">Нажимая кнопку "Cкачать", вы соглашаетесь <a href="#" target="_blank">с политикой конфиденциальности</a>
+                </label>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="popup popup_max" id="popup-client">
+    <button type="button" class="popup__close-btn"></button>
+    <div class="popup__content">
+        <form class="form ajax" method="POST" action="" name="client">
+            <h3 class="popup__title form__title">Обратная связь</h3>
+            <div class="popup__grid form__grid row row_large d-flex wrap">
+                <div class="form__group form__group_middle col">
+                    <input type="text" class="form__element form__input" name="name" placeholder="Представьтесь (необязательно)"  tabindex="-1">
+                </div>
+                <div class="form__group form__group_middle col">
+                    <input type="tel" class="form__element form__input required" name="phone" placeholder="Контактный телефон"  tabindex="-1">
+                </div>
+                <div class="form__group form__group_large col">
+                    <textarea type="text" class="form__element form__textarea form__textarea_large" name="сomment" placeholder="Комментарий"  tabindex="-1"></textarea>
+                </div>
+                <div class="form__group form__group_middle col">
+                    <input type="file" name="file[]" id="file-1" class="form__element form__file ideas__form-file-input" data-multiple-caption="Выбрано файлов - {count}" multiple=""  tabindex="-1">
+                    <label class="ideas__form-file-label d-flex" for="file-1">
+                        <span class="file__text file__text_bold">Есть файл? Приложите!</span>
+                    </label>
+                </div>
+                <div class="form__group form__group_middle col">
+                    <p class="form__term term">Нажимая кнопку «Отправить», вы соглашаетесь с <a href="#" target="_blank" class="term__link">Политикой конфиденциальности</a></p>
+                </div>
+                <div class="form__group form__group_large col">
+                    <button type="submit" class="popup__send-btn popup__send-btn_large form__btn btn btn-bg btn-bg-blue"  tabindex="-1">
+                        <span class="button_text">Отправить</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="popup popup_max" id="popup-author">
+    <button type="button" class="popup__close-btn"></button>
+    <div class="popup__content">
+        <form class="form ajax" method="POST" action="" name="author">
+            <h3 class="popup__title form__title">Обратная связь</h3>
+            <div class="popup__grid form__grid row row_large d-flex wrap">
+                <div class="form__group form__group_middle col">
+                    <input type="text" class="form__element form__input" name="name" placeholder="Представьтесь (необязательно)"  tabindex="-1">
+                </div>
+                <div class="form__group form__group_middle col">
+                    <input type="tel" class="form__element form__input required" name="phone" placeholder="Контактный телефон"  tabindex="-1">
+                </div>
+                <div class="form__group form__group_large col">
+                    <textarea type="text" class="form__element form__textarea form__textarea_large" name="сomment" placeholder="Комментарий"  tabindex="-1"></textarea>
+                </div>
+                <div class="form__group form__group_middle col">
+                    <input type="file" name="file[]" id="file-1" class="form__element form__file ideas__form-file-input" data-multiple-caption="Выбрано файлов - {count}" multiple=""  tabindex="-1">
+                    <label class="ideas__form-file-label d-flex" for="file-1">
+                        <span class="file__text file__text_bold">Есть файл? Приложите!</span>
+                    </label>
+                </div>
+                <div class="form__group form__group_middle col">
+                    <p class="form__term term">Нажимая кнопку «Отправить», вы соглашаетесь с <a href="#" target="_blank" class="term__link">Политикой конфиденциальности</a></p>
+                </div>
+                <div class="form__group form__group_large col">
+                    <button type="submit" class="popup__send-btn popup__send-btn_large form__btn btn btn-bg btn-bg-blue"  tabindex="-1">
+                        <span class="button_text">Отправить</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
